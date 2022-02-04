@@ -1,6 +1,6 @@
 # efsane_milan
 
-A new Flutter project.
+Efsane milan kadrosu ve hakkında birkaç bilgi.
 
 ## Getting Started
 
