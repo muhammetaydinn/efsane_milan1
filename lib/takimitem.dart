@@ -4,9 +4,11 @@ import 'package:efsane_milan/modeller/takim.dart';
 import 'package:efsane_milan/takim_detay.dart';
 import 'package:efsane_milan/takimlist.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 class TakimItem extends StatelessWidget {
   final Takim listelenenOyuncu;
+  static final int now = DateTime.now().year;
  TakimItem({required this.listelenenOyuncu ,Key? key }) : super(key: key);
 
   
@@ -25,9 +27,11 @@ class TakimItem extends StatelessWidget {
                   
                   Navigator.of(context).push(MaterialPageRoute(builder: (context)=>TakimDetay(secilenTakim: listelenenOyuncu,),),);
                 } ,
+                
                 leading: Image.asset(listelenenOyuncu.kucukResim,width: 64,height: 64,),
                 title: Text(listelenenOyuncu.oyuncuAdi,style: myTextStyle.headline6,),
-                subtitle: Text(listelenenOyuncu.oyuncuYasi,style: myTextStyle.subtitle2),
+                
+                subtitle: Text((now-int.parse(listelenenOyuncu.oyuncuYasi)).toString()+" yaşında",style: myTextStyle.subtitle2),
                 trailing: Icon(Icons.arrow_forward,color:Colors.black),
               ),
             ],
