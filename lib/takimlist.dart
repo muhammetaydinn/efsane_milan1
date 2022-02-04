@@ -46,8 +46,9 @@ class TakimList extends StatelessWidget {
         var oyuncuhayat=Strings.OYUNCU_HAYATI[i];
         var kucukresim=Strings.OYUNCU_KUCUK[i];
         var buyukresim=Strings.OYUNCU_BUYUK[i];
+        var videolar=Strings.OYUNCU_VIDEOLAR[i];
 
-        Takim eklenecekTakim = Takim(oyuncuAdlari,oyuncualt,oyuncuhayat,kucukresim,buyukresim);
+        Takim eklenecekTakim = Takim(oyuncuAdlari,oyuncualt,oyuncuhayat,kucukresim,buyukresim,videolar);
         gecici.add(eklenecekTakim);
     }
     return gecici;
