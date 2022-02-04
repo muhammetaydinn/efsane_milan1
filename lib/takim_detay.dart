@@ -15,7 +15,7 @@ class TakimDetay extends StatefulWidget {
 
 class _TakimDetayState extends State<TakimDetay> {
   
-  YoutubePlayerController _controller=YoutubePlayerController(initialVideoId: "3xJVR-gCUSY",flags: const YoutubePlayerFlags(autoPlay: true,mute: false));
+  YoutubePlayerController _controller=YoutubePlayerController(initialVideoId: "zqwUIjjtuZs",flags: const YoutubePlayerFlags(autoPlay: true,mute: false));
   Color appBarRenk=Colors.red;
   late PaletteGenerator _generator;
    
